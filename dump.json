@@ -1,0 +1,1773 @@
+[
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "artigo", 
+            "name": "artigo", 
+            "app_label": "Produtos"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "banner", 
+            "name": "banner", 
+            "app_label": "banners"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "caixapostal", 
+            "name": "Caixa Postal", 
+            "app_label": "Contato"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categoria", 
+            "name": "categoria", 
+            "app_label": "Produtos"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "cilindradas", 
+            "name": "cilindradas", 
+            "app_label": "Produtos"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "loja", 
+            "name": "loja", 
+            "app_label": "Concessionarias"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "moto", 
+            "name": "moto", 
+            "app_label": "Financiamento"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "moto", 
+            "name": "moto", 
+            "app_label": "Produtos"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "motoextrainfo", 
+            "name": "moto extra info", 
+            "app_label": "Produtos"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "noticias", 
+            "name": "Not\u00edcia", 
+            "app_label": "Noticia"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": "6d24e3e546ba5c27b652ee6b672718ee", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-03-26 13:19:11", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjMxZGFlYzY5MGViYjhjYTBkODEx\nNTBhZGVjYTJlN2Vl\n"
+        }
+    }, 
+    {
+        "pk": "0457775984961044489a6137e982b814", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-03-27 18:16:47", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjMxZGFlYzY5MGViYjhjYTBkODEx\nNTBhZGVjYTJlN2Vl\n"
+        }
+    }, 
+    {
+        "pk": "1356c241eca420b37b6234e79e9cd481", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-03-27 18:23:05", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjMxZGFlYzY5MGViYjhjYTBkODEx\nNTBhZGVjYTJlN2Vl\n"
+        }
+    }, 
+    {
+        "pk": "672c3b624259cbf985f343abbfd6cfca", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-03-27 18:31:29", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjMxZGFlYzY5MGViYjhjYTBkODEx\nNTBhZGVjYTJlN2Vl\n"
+        }
+    }, 
+    {
+        "pk": "7e69ad0cadc295c1d166c71dbd2b79a7", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-04-18 21:42:34", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEEigEEdS4wODhiMGJlNGMyNThkZmM2ZjI5\nOGEwODhkMWIzMjc4NA==\n"
+        }
+    }, 
+    {
+        "pk": "542d2d53d77c39ade82988a02579e9e9", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-04-18 12:24:34", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEEigEEdS4wODhiMGJlNGMyNThkZmM2ZjI5\nOGEwODhkMWIzMjc4NA==\n"
+        }
+    }, 
+    {
+        "pk": "3e1faaf8f053174a77b625a6856c02a5", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2010-04-11 13:14:05", 
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEEigEDdS5mNDQ0MWJmOWRlMTc3Yjg0YzI2\nMWMzMjM1Y2QzY2Y4Mg==\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "www.bramoto.com", 
+            "name": "www.bramoto.com"
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2010-04-04 22:52:01", 
+            "object_repr": "teste", 
+            "object_id": "14", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:50:50", 
+            "object_repr": "teste", 
+            "object_id": "14", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:32:33", 
+            "object_repr": "CG 150 Titan Mix EX", 
+            "object_id": "14", 
+            "change_message": "Modificado modelo, valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:32:19", 
+            "object_repr": "CG 150 Titan Mix ES", 
+            "object_id": "12", 
+            "change_message": "Modificado modelo, valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:31:59", 
+            "object_repr": "CG 150 Titan Mix KS", 
+            "object_id": "11", 
+            "change_message": "Modificado modelo, valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:31:56", 
+            "object_repr": "CG 150 Titan", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:29:00", 
+            "object_repr": "CG 150 Mix EX", 
+            "object_id": "14", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:28:52", 
+            "object_repr": "CG 150 Mix ES", 
+            "object_id": "12", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:28:35", 
+            "object_repr": "CG 150 Mix KS", 
+            "object_id": "11", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:28:27", 
+            "object_repr": "CG 150 Fan ESi", 
+            "object_id": "10", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:28:24", 
+            "object_repr": "CG 150 Fan", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:27:42", 
+            "object_repr": "CG 125 Fan ES", 
+            "object_id": "9", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:27:32", 
+            "object_repr": "CG 125 Fan KS", 
+            "object_id": "8", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:27:13", 
+            "object_repr": "CG 125 Fan", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:26:15", 
+            "object_repr": "CG 125 Cargo ES", 
+            "object_id": "7", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:26:08", 
+            "object_repr": "CG 125 Cargo KS", 
+            "object_id": "6", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:26:05", 
+            "object_repr": "CG 125 Cargo", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:17:03", 
+            "object_repr": "Lead 110", 
+            "object_id": "2", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:17:00", 
+            "object_repr": "Lead 110", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:16:01", 
+            "object_repr": "Pop 100", 
+            "object_id": "1", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:15:33", 
+            "object_repr": "Pop 100", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:05:01", 
+            "object_repr": "NXR 150 Bros KS", 
+            "object_id": "15", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:04:53", 
+            "object_repr": "NXR 150 Bros ES", 
+            "object_id": "16", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:04:43", 
+            "object_repr": "NXR 150 Bros ESD", 
+            "object_id": "17", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:04:36", 
+            "object_repr": "NXR 150 Bros KS Mix", 
+            "object_id": "18", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:04:19", 
+            "object_repr": "NXR 150 Bros ES Mix", 
+            "object_id": "19", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:03:58", 
+            "object_repr": "NXR 150 Bros ESD Mix", 
+            "object_id": "20", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:03:50", 
+            "object_repr": "NXR 150 BROS MIX", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:02:00", 
+            "object_repr": "CB 300R", 
+            "object_id": "21", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:01:53", 
+            "object_repr": "CB 300R ABS", 
+            "object_id": "22", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:01:47", 
+            "object_repr": "CB 300R", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:00:46", 
+            "object_repr": "XRE 300", 
+            "object_id": "23", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 22:00:39", 
+            "object_repr": "XRE 300 ABS", 
+            "object_id": "24", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 22:00:35", 
+            "object_repr": "XRE 300", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 21:59:40", 
+            "object_repr": "CB 600 Hornet STD", 
+            "object_id": "25", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 21:59:32", 
+            "object_repr": "CB 600 Hornet ABS", 
+            "object_id": "26", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 21:58:52", 
+            "object_repr": "CB 600F Hornet", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 21:57:47", 
+            "object_repr": "CRF 230F", 
+            "object_id": "27", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 21:57:39", 
+            "object_repr": "CRF 230F", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 21:56:21", 
+            "object_repr": "VT 750 Shadow", 
+            "object_id": "28", 
+            "change_message": "Modificado valor e extra.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 21:55:11", 
+            "object_repr": "Shadow 750", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 21:52:22", 
+            "object_repr": "Biz 125", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 18:32:07", 
+            "object_repr": "Capacete Bramoto 35 anos", 
+            "object_id": "3", 
+            "change_message": "Changed valor, parcelas and valor_parcela.", 
+            "user": 3, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 18:31:35", 
+            "object_repr": "Jaqueta Riffel Dinamic", 
+            "object_id": "2", 
+            "change_message": "Changed valor, parcelas and valor_parcela.", 
+            "user": 3, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 18:30:41", 
+            "object_repr": "Jaqueta Honda Masculina", 
+            "object_id": "1", 
+            "change_message": "Changed parcelas and valor_parcela.", 
+            "user": 3, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 18:28:46", 
+            "object_repr": "Sapata traseira Hamp", 
+            "object_id": "5", 
+            "change_message": "Changed valor, parcelas and valor_parcela.", 
+            "user": 3, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-04-04 18:22:21", 
+            "object_repr": "Filtro de \u00d3leo Hamp", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-04-04 12:27:53", 
+            "object_repr": "CG 150 Fan ESi", 
+            "object_id": "10", 
+            "change_message": "Modificado modelo e valor.", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2010-04-04 12:27:35", 
+            "object_repr": "CG 150 Mix ESD", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2010-03-29 12:09:51", 
+            "object_repr": "Bruno", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 3, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2010-03-29 12:09:51", 
+            "object_repr": "root", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 3, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-03-29 12:09:15", 
+            "object_repr": "Loja Seminovas (Santa Maria)", 
+            "object_id": "7", 
+            "change_message": "Changed link_externo_label.", 
+            "user": 3, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-03-29 12:05:39", 
+            "object_repr": "Loja Seminovas (Santa Maria)", 
+            "object_id": "7", 
+            "change_message": "Changed link_externo.", 
+            "user": 3, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_cacapava.jpg", 
+            "nome": "", 
+            "cidade": "Ca\u00e7apava do Sul", 
+            "created": "2010-03-13 19:16:59", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 24 de junho de 2008.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3281 5111", 
+            "endereco": "Rua 15 de Novembro, 755.", 
+            "slug": "cacapava-do-sul"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_cachoeira_do_sul.jpg", 
+            "nome": "", 
+            "cidade": "Cachoeira do Sul", 
+            "created": "2010-03-13 19:11:58", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 18 de julho de 1978.", 
+            "link_externo_label": null, 
+            "telefone": "(51) 3722.2235 ", 
+            "endereco": "Rua Saldanha Marinho, 1264.", 
+            "slug": "cachoeira-do-sul"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_itaqui.jpg", 
+            "nome": "", 
+            "cidade": "Itaqui", 
+            "created": "2010-03-13 19:14:59", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 28 de janeiro de 2007.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3433-4540", 
+            "endereco": "Avenida independ\u00eancia  636.", 
+            "slug": "itaqui"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/rosario.jpg", 
+            "nome": "", 
+            "cidade": "Ros\u00e1rio do Sul", 
+            "created": "2010-03-13 19:18:17", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 7 abril 2009.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3231 5500", 
+            "endereco": "Rua Volunt\u00e1rios da P\u00e1tria 1895", 
+            "slug": "rosario-do-sul"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_santa_maria.jpg", 
+            "nome": "", 
+            "cidade": "Santa Maria", 
+            "created": "2010-03-13 19:10:25", 
+            "link_externo": null, 
+            "legenda_imagem": "Matriz fundada em novembro de 1974.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3222.3838", 
+            "endereco": "Avenida Presidente Vargas, 2174.", 
+            "slug": "santa-maria"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_seminovas.jpg", 
+            "nome": "Seminovas", 
+            "cidade": "Santa Maria", 
+            "created": "2010-03-13 19:16:03", 
+            "link_externo": "http://sulrevendas.com.br/busca_veiculo.asp?c=&t=&ma=&com=&cor=&f=&e=&v=bramoto&ad=&aa=&vd=&va=&mo=&ace=&pd=&pq=", 
+            "legenda_imagem": "Filial fundada em 01 de maio de 2005.", 
+            "link_externo_label": "Consulte nossas motos dispon\u00edveis.", 
+            "telefone": "(55) 3223.7794", 
+            "endereco": "Avenida Medianeira, 379.", 
+            "slug": "seminovas-santa-maria"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_santiago.jpg", 
+            "nome": "", 
+            "cidade": "Santiago", 
+            "created": "2010-03-13 19:13:31", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 01 de mar\u00e7o de 2004.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3251.1555", 
+            "endereco": "Rua Bento Gon\u00e7alves, 2046.", 
+            "slug": "santiago"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_sao_borja.jpg", 
+            "nome": "", 
+            "cidade": "S\u00e3o Borja", 
+            "created": "2010-03-13 19:12:47", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 02 de maio de 1999.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3431.2727", 
+            "endereco": "Avenida J\u00falio Trois, 1778.", 
+            "slug": "sao-borja"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "Concessionarias.loja", 
+        "fields": {
+            "imagem": "sistemas.public/Concessionarias/Loja/fachada_sao_gabriel.jpg", 
+            "nome": "", 
+            "cidade": "S\u00e3o Gabriel", 
+            "created": "2010-03-13 19:14:18", 
+            "link_externo": null, 
+            "legenda_imagem": "Filial fundada em 01 de agosto de 2005.", 
+            "link_externo_label": null, 
+            "telefone": "(55) 3232.6953", 
+            "endereco": "Rua Jo\u00e3o Manoel, 849.", 
+            "slug": "sao-gabriel"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "boutique", 
+            "parcelas": 6, 
+            "imagem": "sistemas.public/Produtos/Artigo/67001d57.jpg", 
+            "nome": "Capacete Bramoto 35 anos", 
+            "valor_parcela": "10.50", 
+            "created": "2010-03-13 18:36:23", 
+            "valor": "63.00", 
+            "descricao": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "boutique", 
+            "parcelas": 6, 
+            "imagem": "sistemas.public/Produtos/Artigo/816e4ef0.jpg", 
+            "nome": "Jaqueta Honda Masculina", 
+            "valor_parcela": "21.66", 
+            "created": "2010-03-13 18:34:40", 
+            "valor": "130.00", 
+            "descricao": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "boutique", 
+            "parcelas": 6, 
+            "imagem": "sistemas.public/Produtos/Artigo/89fc112c.jpg", 
+            "nome": "Jaqueta Riffel Dinamic", 
+            "valor_parcela": "68.60", 
+            "created": "2010-03-13 18:35:40", 
+            "valor": "411.60", 
+            "descricao": ""
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "pecas", 
+            "parcelas": 6, 
+            "imagem": "", 
+            "nome": "Filtro de \u00d3leo Hamp", 
+            "valor_parcela": "3.00", 
+            "created": "2010-04-04 18:22:21", 
+            "valor": "18.04", 
+            "descricao": "Tornado, Twister, CB 300 e Falcon."
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "pecas", 
+            "parcelas": 0, 
+            "imagem": "sistemas.public/Produtos/Artigo/9dcd45b9.jpg", 
+            "nome": "Kit Cilindro / Pist\u00e3o / An\u00e9is", 
+            "valor_parcela": "0.00", 
+            "created": "2010-03-13 18:38:01", 
+            "valor": "178.40", 
+            "descricao": "Para Titan 1990/2001."
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "pecas", 
+            "parcelas": 0, 
+            "imagem": "sistemas.public/Produtos/Artigo/9518da46.jpg", 
+            "nome": "\u00d3leo Mobil", 
+            "valor_parcela": "0.00", 
+            "created": "2010-03-13 18:40:22", 
+            "valor": "12.50", 
+            "descricao": "\u00d3leo para motor."
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "Produtos.artigo", 
+        "fields": {
+            "categoria": "pecas", 
+            "parcelas": 6, 
+            "imagem": "sistemas.public/Produtos/Artigo/cb9ee819.jpg", 
+            "nome": "Sapata traseira Hamp", 
+            "valor_parcela": "3.98", 
+            "created": "2010-03-13 18:39:38", 
+            "valor": "23.88", 
+            "descricao": "Para CG 125 e CG 150"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 100, 
+            "created": "2010-03-12 13:29:45"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 110, 
+            "created": "2010-03-12 13:26:59"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 125, 
+            "created": "2010-03-12 13:27:08"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 150, 
+            "created": "2010-03-12 13:27:29"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 230, 
+            "created": "2010-03-12 13:27:45"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 300, 
+            "created": "2010-03-12 13:27:51"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 600, 
+            "created": "2010-03-12 13:28:14"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "Produtos.cilindradas", 
+        "fields": {
+            "num_cilindros": 750, 
+            "created": "2010-03-12 13:28:30"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Produtos.categoria", 
+        "fields": {
+            "created": "2010-03-12 13:20:32", 
+            "nome": "Importadas"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Produtos.categoria", 
+        "fields": {
+            "created": "2010-03-12 13:20:25", 
+            "nome": "Nacionais"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Produtos.categoria", 
+        "fields": {
+            "created": "2010-03-12 13:20:40", 
+            "nome": "Quadriciclo"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondabiz125.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-36c3e7bb.jpg", 
+            "nome": "Biz 125"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.shadow750.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-7a1bf711.jpg", 
+            "nome": "Shadow 750"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondacrf230f.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-391d0e7e.jpg", 
+            "nome": "CRF 230F"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.cb600fhornet.com.br/2010/", 
+            "imagem": "sistemas.public/Produtos/Moto/-6f121e34.jpg", 
+            "nome": "CB 600F Hornet"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondaxre300.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-60dfbfcd.jpg", 
+            "nome": "XRE 300"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondacb300r.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/73661c7b.jpg", 
+            "nome": "CB 300R"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.novahondabrosmix.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-69928f0a.jpg", 
+            "nome": "NXR 150 BROS MIX"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondapop100.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-3719ee4c.jpg", 
+            "nome": "Pop 100"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.novahondalead.com.br/html/", 
+            "imagem": "sistemas.public/Produtos/Moto/70c4520c.jpg", 
+            "nome": "Lead 110"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.honda.com.br/cargo125/", 
+            "imagem": "sistemas.public/Produtos/Moto/6a11be2d.jpg", 
+            "nome": "CG 125 Cargo"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.hondacg125fan.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/-5a14f58f.jpg", 
+            "nome": "CG 125 Fan"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.novacg150fan.com.br/", 
+            "imagem": "sistemas.public/Produtos/Moto/6f4f54b8.jpg", 
+            "nome": "CG 150 Fan"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "Produtos.motoextrainfo", 
+        "fields": {
+            "hotsite": "http://www.titanmix.com.br/2010/html/", 
+            "imagem": "sistemas.public/Produtos/Moto/-6e2bda74.jpg", 
+            "nome": "CG 150 Titan"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:29:48", 
+            "extra": 8, 
+            "ano": 2010, 
+            "modelo": "Pop 100", 
+            "caracteristicas": "", 
+            "valor": "4600.00", 
+            "cilindradas": 8
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:30:33", 
+            "extra": 9, 
+            "ano": 2010, 
+            "modelo": "Lead 110", 
+            "caracteristicas": "", 
+            "valor": "6950.00", 
+            "cilindradas": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:31:16", 
+            "extra": 1, 
+            "ano": 2010, 
+            "modelo": "Biz 125 KS", 
+            "caracteristicas": "", 
+            "valor": "6375.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:32:01", 
+            "extra": 1, 
+            "ano": 2010, 
+            "modelo": "Biz 125 ES", 
+            "caracteristicas": "", 
+            "valor": "7035.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:47:54", 
+            "extra": 1, 
+            "ano": 2010, 
+            "modelo": "Biz 125 Mais", 
+            "caracteristicas": "", 
+            "valor": "7699.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:48:18", 
+            "extra": 10, 
+            "ano": 2010, 
+            "modelo": "CG 125 Cargo KS", 
+            "caracteristicas": "", 
+            "valor": "5990.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:48:48", 
+            "extra": 10, 
+            "ano": 2010, 
+            "modelo": "CG 125 Cargo ES", 
+            "caracteristicas": "", 
+            "valor": "6670.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:49:35", 
+            "extra": 11, 
+            "ano": 2010, 
+            "modelo": "CG 125 Fan KS", 
+            "caracteristicas": "", 
+            "valor": "5990.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:50:10", 
+            "extra": 11, 
+            "ano": 2010, 
+            "modelo": "CG 125 Fan ES", 
+            "caracteristicas": "", 
+            "valor": "6670.00", 
+            "cilindradas": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:50:49", 
+            "extra": 12, 
+            "ano": 2010, 
+            "modelo": "CG 150 Fan ESi", 
+            "caracteristicas": "", 
+            "valor": "7190.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:51:29", 
+            "extra": 13, 
+            "ano": 2010, 
+            "modelo": "CG 150 Titan Mix KS", 
+            "caracteristicas": "", 
+            "valor": "7690.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:51:56", 
+            "extra": 13, 
+            "ano": 2010, 
+            "modelo": "CG 150 Titan Mix ES", 
+            "caracteristicas": "", 
+            "valor": "8370.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:53:43", 
+            "extra": 13, 
+            "ano": 2010, 
+            "modelo": "CG 150 Titan Mix EX", 
+            "caracteristicas": "", 
+            "valor": "8675.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:54:27", 
+            "extra": 7, 
+            "ano": 2009, 
+            "modelo": "NXR 150 Bros KS", 
+            "caracteristicas": "", 
+            "valor": "8890.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:54:55", 
+            "extra": 7, 
+            "ano": 2009, 
+            "modelo": "NXR 150 Bros ES", 
+            "caracteristicas": "", 
+            "valor": "9745.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:55:21", 
+            "extra": 7, 
+            "ano": 2009, 
+            "modelo": "NXR 150 Bros ESD", 
+            "caracteristicas": "", 
+            "valor": "10460.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:55:47", 
+            "extra": 7, 
+            "ano": 2010, 
+            "modelo": "NXR 150 Bros KS Mix", 
+            "caracteristicas": "", 
+            "valor": "9330.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:56:16", 
+            "extra": 7, 
+            "ano": 2010, 
+            "modelo": "NXR 150 Bros ES Mix", 
+            "caracteristicas": "", 
+            "valor": "9860.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:56:56", 
+            "extra": 7, 
+            "ano": 2010, 
+            "modelo": "NXR 150 Bros ESD Mix", 
+            "caracteristicas": "", 
+            "valor": "10460.00", 
+            "cilindradas": 3
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:57:27", 
+            "extra": 6, 
+            "ano": 2010, 
+            "modelo": "CB 300R", 
+            "caracteristicas": "", 
+            "valor": "12900.00", 
+            "cilindradas": 5
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:57:53", 
+            "extra": 6, 
+            "ano": 2010, 
+            "modelo": "CB 300R ABS", 
+            "caracteristicas": "", 
+            "valor": "15490.00", 
+            "cilindradas": 5
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:58:24", 
+            "extra": 5, 
+            "ano": 2010, 
+            "modelo": "XRE 300", 
+            "caracteristicas": "", 
+            "valor": "14450.00", 
+            "cilindradas": 5
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:58:51", 
+            "extra": 5, 
+            "ano": 2010, 
+            "modelo": "XRE 300 ABS", 
+            "caracteristicas": "", 
+            "valor": "16950.00", 
+            "cilindradas": 5
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:59:21", 
+            "extra": 4, 
+            "ano": 2010, 
+            "modelo": "CB 600 Hornet STD", 
+            "caracteristicas": "", 
+            "valor": "35680.00", 
+            "cilindradas": 6
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 13:59:42", 
+            "extra": 4, 
+            "ano": 2010, 
+            "modelo": "CB 600 Hornet ABS", 
+            "caracteristicas": "", 
+            "valor": "39500.00", 
+            "cilindradas": 6
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 14:00:04", 
+            "extra": 3, 
+            "ano": 2010, 
+            "modelo": "CRF 230F", 
+            "caracteristicas": "", 
+            "valor": "11860.00", 
+            "cilindradas": 4
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "Produtos.moto", 
+        "fields": {
+            "categoria": 1, 
+            "created": "2010-03-12 14:00:26", 
+            "extra": 2, 
+            "ano": 2010, 
+            "modelo": "VT 750 Shadow", 
+            "caracteristicas": "", 
+            "valor": "33300.00", 
+            "cilindradas": 7
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "Noticia.noticias", 
+        "fields": {
+            "chamada": "Primeira noticia", 
+            "texto": "N\u00e3o perca mais tempo procurando, sua moto 2010 est\u00e1 na Bramoto.", 
+            "created": "2010-03-23 20:42:06"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "banners.banner", 
+        "fields": {
+            "titulo": "Banner CNH", 
+            "lado": "esquerda", 
+            "banner": "sistemas.public/banners/banner-cnh__.jpg", 
+            "uri": "http://www.consorcionacionalhonda.com.br/", 
+            "created": "2010-03-24 20:35:23"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "banners.banner", 
+        "fields": {
+            "titulo": "Banner Honda", 
+            "lado": "direita", 
+            "banner": "sistemas.public/banners/banner-honda.jpg", 
+            "uri": "http://www.honda.com.br/", 
+            "created": "2010-03-24 21:13:13"
+        }
+    }
+]

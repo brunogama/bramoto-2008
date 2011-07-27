@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}
+	Motos
+	|  
+{% endblock %}
+{% block conteudo %}
+	<h2>Motos</h2>
+<div class="white_box">
+	<p class="upper-case">Mais liberdade na sua vida</p>
+	<p>Sempre existe uma Honda que combina com você.</p>
+	
+	
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			$("body div.artigos div.scrollable").scrollable({
+				size:4
+			}).gallery({
+				disabledClass: 'inactive'
+			});
+		});
+	</script>
+	<div class="artigos clearfix">
+	    <a class="prevPage btn">anteriores</a>
+	    <div class="scrollable">
+	        <div class="items">
+				{% for moto in motos %}
+				{% if forloop.first %}
+				<div class="first">
+				{% else %}
+				<div>
+				{% endif %}
+					<a href="{{ moto.hotsite }}" title="{{ moto.nome }}" rel="external">
+				    	<img src="{{ moto.imagem.url_75x74 }}" alt="{{ moto.nome }}" />
+					</a>
+					<h3>{{ moto.nome }}</h3>
+				</div>
+				{% endfor %}
+	        </div>
+	    </div>
+	    <a class="nextPage btn">próximas</a>
+	</div>
+	
+</div>
+{% endblock %}

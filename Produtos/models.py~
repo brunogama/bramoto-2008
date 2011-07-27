@@ -1,0 +1,18 @@
+# -*- coding: latin-1 -*-
+from django.db import models
+
+# Create your models here.
+CATEGORIAS = (
+    ('pecas', u'Peças'),
+    ('boutique','Boutique'),    
+)
+upload_path = 'sistemas.public/Produtos/Artigo/'
+class Artigo(models.Model):
+    nome = models.CharField(max_length = 100)
+    imagem = models.ImageField(upload_to = upload_path)
+    valor = models.FloatField()
+    categoria = models.CharField(choices = CATEGORIAS, max_length = 10)
+    class Meta:
+        ordering = ('categoria','nome',)
+    def __unicode__(self):
+        pass

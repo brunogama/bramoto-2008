@@ -1,0 +1,488 @@
+@charset "utf-8";
+/**
+ *	Color reference - #95b8b8
+*/
+
+@font-face {
+	font-family: "News706 BT Roman";
+	_src: url('../giriadepirata.eot');
+	src: local("News706 BT Roman"), url('../giriadepirata.ttf') format('truetype');
+}
+/*
+@font-face {
+ font-family: "News706 BT Roman";
+ src: url('../giriadepirata.eot');
+}
+
+
+@font-face {
+     font-family: "News706 BT Roman";
+     src: url('../giriadepirata.ttf');
+} 
+*/
+html, body { height: 100%; width: 100% }
+
+body { 
+	background: #858b8d url(../img/stripes_background.gif); 
+	color: #fff;
+	overflow: auto;
+	font-size: 21px;
+	line-height: 1.125em;
+	font-family: "News706 BT Roman", Georgia, "Times New Roman", serif;
+	font-weight: normal	;
+	text-align: justify;
+	position: relative;
+}
+
+#wrapper {	
+	background: url(../img/wrapper.jpg) 50% 0 no-repeat;
+	display: block;
+	border: 10px solid #fff;
+	height: 728px; 	
+	margin: 0 auto;
+	padding: 20px 40px;
+	position: relative;
+	width: 922px;
+}
+#header { 
+	position: relative;
+	margin-bottom: 10px;
+}
+#logo {
+	background: url(../img/logo_trans.png) 0 0 no-repeat;
+	display: block;
+	height: 198px;
+	left: 50%;
+	margin: -65px 0 0 -96px;
+	top: 0;
+	width: 182px;
+	position: absolute;
+	z-index: 100;
+}
+#logo a {
+	display: block;
+	height: 198px;
+	text-indent: -99999px;
+	width: 182px;
+}
+#menu {
+	background: url(../img/topo.png) center bottom no-repeat;
+	width: 922px;
+	height: 114px;
+	margin-top: 34px;
+}
+#menu  ul {
+	padding-top: 85px;
+	padding-left: 20px;
+	width: 902px;	
+}
+#menu  li {
+	display: block; 
+	float: left; 
+	height: 20px;
+}
+/*#menu ul li.home a { padding: 0 20px ; border-left: none!important;}
+#menu ul li.concessionarias a { padding: 0 30px;}
+#menu ul li.motos a { padding: 0 30px; margin-right: 250px; }
+#menu ul li.oficina a { padding: 0 30px; border-left: none!important;}
+#menu ul li.produtos a { padding: 0 40px;}
+#menu ul li.contato a { padding: 0 0 0 40px; border-right: none;}*/
+
+#menu ul li.home a { padding: 0 20px ; border-left: none!important;}
+#menu ul li.concessionarias a { padding: 0 30px;}
+#menu ul li.motos a { padding: 0 30px; margin-right: 230px; }
+#menu ul li.oficina a { padding: 0 30px; border-left: none!important;}
+#menu ul li.produtos a { padding: 0 40px;}
+#menu ul li.contato a { padding: 0 0 0 40px; border-right: none;}
+
+#menu ul li.contato a, x:-moz-any-link, x:default {}
+
+#menu ul li a {
+	border-left: 1px solid #FFFFFF !important;
+	color: #fff;
+	font: 10px Verdana;
+	text-decoration: none;i 
+}
+#menu ul li a:hover { text-decoration: underline; }
+
+#conteudo #banner {
+	background: #000;
+	margin: -5px 0 40px 0;
+	width: 900px;
+	padding: 11px;
+}
+#banner ul {
+	display: block;
+	float: left;
+	clear: both;
+}
+#banner ul li.first { 
+	margin-right: 4px;
+}
+#banner ul li { 
+	border: 1px solid #fff; 
+	float: left; 
+	padding: 1px;
+}
+
+#banner img { display: block; }
+.white_box {
+	width: 882px;
+	background: url(../img/background-trans-white2_trans.png) 0 0 no-repeat;
+	margin-top: 5px;
+	padding: 20px;
+}
+
+.white_box div.left { margin-right: 40px; }
+.white_box div dl dd,
+.texto-destaque { color: #e11f26; }
+.white_box h3 { font-size: 16px; color: #e11f26; margin: 10px;}
+.white_box div dl,
+.white_box div ul { font-size: 14px;}
+.white_box div ul li span.texto-destaque { margin-left: 10px ;}
+.white_box div p { font-size: 14px !important; margin: 10px 0 !important;}
+.white_box div img {
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border: 1px solid #fff;
+	display: block;
+	padding: 4px;
+}
+.white_box div img + small {
+	font-size: 12px;
+	display: block;
+	text-align: right;
+/*	text-shadow: 1px 1px 1px #000;*/
+}
+
+#footer {
+	background: url(../img/rodape2_trans.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	margin-left: -40px
+}
+
+
+#footer p {
+	color: #fff;
+	font: 10px Verdana;
+	padding: 5px;
+	margin: 0;
+	text-align: center; 
+}
+
+/* Grids */
+.width1 { width: 922px }
+.width2 { width: 451px }
+.width3 { width: 320px }
+.width4 { width: 240px }
+/* Custom Grids */
+.with2-1 { width: 535px; }
+.width2-2 { width: 375px; }
+
+.left.width2 { padding-right: 5px; }
+.right.width2 { padding-left: 5px;}
+/* Text stuff */
+
+#conteudo {
+	display: block;
+	position: relative;
+}
+#conteudo p { 
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.2em;
+/*	text-shadow: 1px 1px 1px #000;*/
+	margin: 20px 0;
+}
+
+/*#conteudo dl,
+#conteudo ul { text-shadow: 1px 1px 1px #000; }
+*/
+#conteudo ul.horizontal-link-list {
+	padding: 0 20px;
+	position: relative;
+	z-index: 101;
+}
+#conteudo a {
+	text-decoration: none;
+	position: relative;
+	z-index: 11;
+	color: #e11f26;
+}
+/*Form stuff*/
+#conteudo form ol { 
+	float: left; 
+	clear: right; 
+	display: block; 
+	width: 450px;
+}
+#conteudo form ol li { 
+	display: block;
+	margin: 1px 0;
+}
+
+#conteudo form ol li.error select,
+#conteudo form ol li.error textarea,
+#conteudo form ol li.error input[type=text] { border: 1px solid #e11f26; }
+#conteudo form ol li ul.errorlist { display: none; }
+#conteudo textarea,
+#conteudo input[type=text] { 
+	background: #fff url(../img/input-bkg.gif) 0 top repeat-x;
+	border: 1px solid #ccc;
+	height: 14px;
+	width: 240px;
+	box-shadow: rgba(0,0,0, 0.25) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.25) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.25) 0px 0px 8px;
+}
+#conteudo textarea:hover, #conteudo input[type=text]:hover,
+#conteudo textarea:focus, #conteudo input[type=text]:focus {
+	box-shadow: rgba(0,0,0, 0.5) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.5) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.5) 0px 0px 8px;
+}
+#conteudo textarea { height: 100px; }
+#conteudo label { 
+	display: block; 
+	float: left; 
+	text-align: left; 	
+/*	text-shadow: 1px 1px 1px #000;*/
+	width: 190px; 
+	font-size: 12px;
+}
+#form-financiamento { width: 320px;}
+#form-financiamento ol li {display: block !important; clear: both !important;}
+#form-financiamento ol li span { display: none;}
+#form-financiamento ol li.error span { display: block; color:#e11f26;}
+#form-financiamento ol li.error input[type=text] {
+	border: 1px solid #e11f26;
+}
+#valor-proposto,
+#valor-prestacao-proposta { 
+	display: hidden;
+}
+#form-financiamento label { display: block; float: none;}
+form.big_form button {
+	margin: 0!important;
+}
+form.big_form textarea,
+form.big_form input[type=text] {
+	margin-top: 5px !important;
+	font-size: 16px !important;
+	height: 22px !important;
+	padding: 2px !important;
+	width: 300px !important;
+}
+form.big_form input[readonly="readonly"] { color: #eee;}
+form.big_form textarea { height: 200px !important;}
+form.big_form label { 
+		font-size: 16px !important; 
+		width: 200px !important;
+		margin-right: 50px !important;
+}
+form.big_form label small {
+	color: #eee;
+	display: block;
+	font-size: 12px;
+}
+form.big_form fieldset {
+	margin: 18px auto;
+	position: relative;
+	z-index: 102;
+}
+button {
+	background: url(../img/btn.jpg) 0 0 no-repeat;
+	border: none;
+	color: #FFF;
+	display: block;
+	font: 12px Verdana;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+	width: 100px;
+	outline: none;
+	cursor: pointer;
+	margin-top: 10px;
+}
+button:hover { text-decoration: underline; }
+ol li.padding_button {
+	padding: 10px 0 0 250px;
+}
+form.big_form ol { width: 600px !important; }
+
+#conteudo a:hover { text-decoration: underline; }
+
+#conteudo ul.horizontal-link-list li { 
+	display: block; 
+	float: left;
+}
+
+ul.horizontal-link-list li.first a ,
+ul.horizontal-link-list li.break a { border-left: none !important; }
+ul.horizontal-link-list li.break { clear: both;}
+
+ul.horizontal-link-list li a {
+	color: #fff !important;
+	display: block;
+	font-size: 14px;
+	text-decoration: none !important;
+	text-align: center;
+	border-left: 1px solid #fff;
+	padding: 0 15px;
+}
+ul.horizontal-link-list li a:hover,
+ul.horizontal-link-list li a:active { color: #e11f26 !important; }
+
+/** scroll stuff */
+.inactive,
+a.disabled { visibility: hidden;}
+
+a.nextPage { background: url(../img/btn-right_trans.png) 50% 50% no-repeat; }
+a.nextPage:hover { background: url(../img/btn-right-hover_trans.png) 50% 50% no-repeat; }
+
+a.prevPage { background: url(../img/btn-left_trans.png) 50% 50% no-repeat; }
+a.prevPage:hover { background: url(../img/btn-left-hover_trans.png) 50% 50% no-repeat; }
+a.prevPage.btn,
+a.nextPage.btn {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 200px;
+	text-indent: -9999px;
+}
+/*div.items div:hover {
+	background: #e11f26;
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border: 1px solid #fff;
+	width: 148px;
+}*/
+div.items div.first { margin-left:0;}
+div.items div {
+	float: left;
+	height: 200px;
+	margin-left: 15px;
+	padding: 15px;
+	text-align: center;
+	width: 150px;
+	position: relative;
+}
+
+div.items div img {
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+div.items div  h3{ 
+	color: #fff; 
+	font-size: 12px; 
+	font-weight: normal;	
+/*	text-shadow: 1px 1px 1px #000;*/
+}
+div.items div p.nome { font-size: 12px !important; }
+div.items div p { font-size: 12px !important; }
+
+div.scrollable {
+/*	border: 1px solid #0f0;*/
+	overflow: hidden;	
+	position: relative;
+	float: left;
+	width:800px;
+	height: 220px;
+}
+div.items {
+	position: absolute;
+	width: 2000em;
+	height: 220px;
+
+}
+
+/* progress indicator (animated gif). should be initially hidden */ 
+.progress { 
+    position:absolute; 
+    top:45%; 
+    left:50%; 
+    display:none; 
+}
+
+/* scrollable should not disable gallery navigation */ 
+
+.artigos { position: relative; }
+
+
+/* the overlayed element */
+.simple_overlay {
+	margin-top: -15px;
+	display:none;
+	z-index:10000;
+	background-color:#333;
+	
+/*	width: 600px;*/	
+	min-height:200px;
+	border:1px solid #666;
+	
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;	
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+	background-image:url(../img/close.png);
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+
+/* the large image. we use a gray border around it */
+#img {
+	border:1px solid #666;
+}
+/* stylin  for elements inside overlay */ 
+.details {
+    font-size: 14px; 
+    color: #fff;
+	display: block;
+	padding: 10px;
+} 
+ 
+.details strong { 
+    color:#aba; 
+    font-size:15px; 
+    margin:0 0 -10px 0; 
+}
+
+/* progress indicator (animated gif). should be initially hidden */
+.progress {
+	position:absolute;
+	top:45%;
+	left:50%;
+	display:none;
+}
+
+
+/* Headings */
+
+h2,
+h3 { 
+	color: #95b8b8; 
+	font-size: 24px; 
+	font-weight: bold; 
+	margin-bottom: 10px;
+/*	text-shadow: 1px 1px 1px #000;*/
+}
+
+#loja h3 {
+	color: #fff; 
+	clear: both;
+	display: block;
+	font-size: 28px;
+	font-weight: normal;
+}

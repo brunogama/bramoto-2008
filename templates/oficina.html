@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+	Assistência Técnica | Oficina |  
+{% endblock %}
+{% block conteudo %}
+	<h2>Oficina</h2>
+	{% include 'submenu_oficina.html' %}
+	<div class="white_box clearfix">
+		<div class="left">
+		    <img src="{{ MEDIA_URL }}img/oficina.jpg" alt="" />
+		</div>
+		<div>
+			<p>A Bramoto oferece a melhor infraestrutura e tecnologia para a manutenção de sua Honda, mecânicos com treinamento de fábrica e profissionais especializados no atendimento pós-venda.</p>
+
+			<h3>Faça manutenção permanente de sua motocicleta</h3> 
+
+			<p>Use as Peças Genuínas Honda e tenha a garantia de manter sua motocicleta como saiu da fábrica.</p>
+		</div>
+	</div>
+{% endblock %}

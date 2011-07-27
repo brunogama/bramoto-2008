@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+	Boutique |  Produtos | 
+{% endblock %}
+{% block conteudo %}
+	<h2>Produtos</h2>
+	
+	{% include 'submenu_produtos.html' %}
+	
+	<div class="white_box clearfix">
+		<h3>Boutique</h3>
+		<p>Aproveite ao máximo a sua Honda utilizando acessórios, capacetes, equipamentos de segurança, jaquetas, capas e trajes de chuva, luvas, botas, produtos oficiais da marca e uma série de itens indispensáveis no dia-a-dia do motociclista.
+		</p>
+		<p>Confira nossos produtos:</p>
+		{% include "artigos.html" %}
+	</div>
+{% endblock %}

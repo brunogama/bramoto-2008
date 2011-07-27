@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}
+	Financiamento | Produtos | 
+{% endblock %}
+{% block conteudo %}
+	<h2>Financiamento</h2>
+	
+	{% include 'submenu_produtos.html' %}
+	
+	<div class="white_box clearfix" id="financiamento">
+		<p>
+		Aqui você poderá fazer seu cálculo de financiamento direto pela página, escolha a moto, diga quanto quer dar de entrada, clique em calcular e veja qual o valor de cada parcela. Lembrando que este valor serve apenas como referência, podendo sofrer alterações para mais ou para menos.
+		</p>
+		<div class="left">
+			<form action="" method="post" id="form-financiamento">
+				<fieldset>
+					<legend>Selecione o modelo:</legend>
+					<ol>
+						<li>
+						    <label for="motos">
+						    	Modelo:
+						    </label>
+						    <select class="moto_select" id="motos">
+								<option value="0">-----------------------------------</option>
+								{% for moto in motos %}
+								<option value="{{moto.valor}}">
+									{{moto.modelo}}
+								</option>
+						    	{% endfor %}
+						    </select>
+						<li>
+						    <label for="valor-personalizado">
+								Valor personalizado:
+								<span>Valor deve ser maior que: <span id="valor-minimo-sugerido">valor</span> </span>
+							</label>
+						    <input type="text" name="" value="" id="valor-personalizado" alt="decimal" />
+						</li>
+					    <li>
+							<input type="hidden" name="hidden-valor" value="-1" id="hidden-valor" />
+							<input type="hidden" name="hidden-valor-minimo" value="-1" id="hidden-valor-minimo" />
+					        <button type="button" id="calcular">
+					        	Calcular
+					        </button>
+					    </li>
+					</ol>
+				</fieldset>
+			</form>
+		</div>
+		<div class="right width2">
+			<dl class="financiamento">
+				<dt>Valor do modelo</dt>
+				<dd id="preco-moto">Nenhuma moto selecionada.</dd>
+				<dt>Valor mínimo da entrada</dt>
+				<dd id="valor-minimo">Nenhuma moto selecionada.</dd>
+				<dt>Valor da prestação (48x)</dt>
+				<dd id="valor-prestacao-minima">Nenhuma moto selecionada.</dd>
+				<dt class="hidden to_hide">Valor proposto</dt>
+				<dd class="hidden to_hide" id="valor-proposto">Digite no campo ao lado o valor de sua entrada</dd>
+				<dt class="hidden to_hide">Valor da prestação para a proposta:</dt>
+				<dd class="hidden to_hide" id="valor-prestacao-proposta"></dd>
+			</dl>
+		</div>
+	</div>
+{% endblock %}

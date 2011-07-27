@@ -1,0 +1,47 @@
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("body div.artigos div.scrollable").scrollable({
+			size : 4
+		}).find("img[rel]").overlay().gallery({
+			disabledClass: 'inactive'
+		});
+	});
+</script>
+<div class="artigos clearfix">
+    <a class="prevPage btn">anteriores</a>
+    <div class="scrollable">
+        <div class="items">
+			{% for artigo in artigos %}
+			{% if forloop.first %}
+			<div class="first">
+			{% else %}
+			<div>
+			{% endif %}
+				
+			    <img src="{{ artigo.imagem.url_75x74 }}" title="{{ artigo.nome }}" alt="{{ artigo.nome }}" rel="#artigo_{{ artigo.id }}" />
+				
+				<h3>{{ artigo.nome }}</h3>
+			</div>
+			{% endfor %}
+        </div>
+    </div>
+    <a class="nextPage btn">próximas</a>
+</div>
+
+{% for artigo in artigos %}
+<div class="simple_overlay" id="artigo_{{ artigo.id }}">
+    	<img src="{{ artigo.imagem.url_499x492 }}" title="{{ artigo.nome }}" alt="{{ artigo.nome }}" />
+	<h3>{{ artigo.nome }}</h3>
+	{% if artigo.parcelas > 0 %}
+    <p class="aprazo">
+    	<span>{{ artigo.parcelas }}</span>x sem juros de R$ <span>{{ artigo.valor_parcela }}</span>.
+    </p>
+	{% endif %}
+	{% if artigo.valor > 0 %}
+	<p class="avista"> R$ <span>{{ artigo.valor }}</span> à vista.</p>
+	{% endif %}
+	{% if artigo.descricao %}
+	<p class="descricao">{{ artigo.descricao }}</p>
+	{% endif %}
+</div>
+{% endfor %}

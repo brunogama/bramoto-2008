@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}
+	Peças | Oficina | 
+{% endblock %}
+{% block conteudo %}
+	<h2>Oficina</h2>
+	{% include 'submenu_oficina.html' %}
+	<div class="white_box clearfix">
+		<p>
+			Na Bramoto, você realiza a manutenção de sua moto com peças originais Honda ou utilizando peças da linha Hamp, especialmente criadas para oferecer durabilidade com ótima relação custo-benefício, sempre com a confiança e aprovação da marca Honda.
+		</p>
+		<p>
+			Confira nossos produtos:
+		</p>
+		{% include "artigos_lista.html" %}
+	</div>
+{% endblock %}
+
+
+{% block body_end %}
+	{% include "artigos_items.html" %}
+{% endblock %}

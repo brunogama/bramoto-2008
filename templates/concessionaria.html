@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}
+	{% if loja.nome %}
+		Bramoto {{ loja.nome }} ({{ loja.cidade }})
+		{% else %}
+		Bramoto {{ loja.cidade }}
+	{% endif %}
+	| Concessionárias | 
+{% endblock %}
+{% block conteudo %}
+	<h2>Concessionárias</h2>
+	<ul class="horizontal-link-list clearfix">
+		{% for concessionaria in lojas %}
+		
+		{% if forloop.first %}
+		<li class="first">
+		{% else %}
+		<li {% if forloop.counter == 6 %}class="break"{% endif %}>
+		{% endif %}
+			<a href="{{ concessionaria.get_absolute_url }}" title="">
+				{% if concessionaria.nome %}
+				{{ concessionaria.nome }} ({{ concessionaria.cidade }})
+				{% else %}
+				{{ concessionaria.cidade }}
+				{% endif %}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+	<div id="loja" class="white_box clearfix">
+		<div class="left">
+		    <img src="{{ MEDIA_URL }}{{ loja.imagem }}" alt="" />
+		    <small>{{ loja.legenda_imagem }}</small>
+		</div>
+		<div>
+			<p>{{ loja.endereco }}</p>
+			<p>{{ loja.telefone }}</p>
+			{% if loja.link_externo %}
+			<p>
+				<a href="{{ loja.link_externo }}" rel="external">
+					{{ loja.link_externo_label }}
+				</a>
+			</p>
+			{% endif %}
+		</div>
+		<h3 class="clearfix">
+			{% if loja.nome %}
+				Bramoto {{ loja.nome }} ({{ loja.cidade }})
+				{% else %}
+				Bramoto {{ loja.cidade }}
+			{% endif %}
+		</h3>
+	</div>
+{% endblock %}

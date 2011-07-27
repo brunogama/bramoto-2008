@@ -1,0 +1,20 @@
+
+{% for artigo in artigos %}
+<div class="simple_overlay" id="artigo_{{ artigo.id }}">
+    	<img src="{{ artigo.imagem.url_499x492 }}" title="{{ artigo.nome }}" alt="{{ artigo.nome }}" />
+	<div class="details">
+		<ul>
+		    <li><strong>{{ artigo.nome }}</strong></li>
+			{% if artigo.parcelas > 0 %}
+			<li class="aprazo"><span>{{ artigo.parcelas }}</span>x sem juros de R$ <span>{{ artigo.valor_parcela }}</span></li>		
+			{% endif %}
+			{% if artigo.valor > 0 %}
+			<li class="avista"> R$ <span>{{ artigo.valor }}</span> à vista.</li>
+			{% endif %}
+			{% if artigo.descricao %}
+			<li class="descricao">{{ artigo.descricao }}</li>
+			{% endif %}
+		</ul>
+	</div>
+</div>
+{% endfor %}

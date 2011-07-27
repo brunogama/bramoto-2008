@@ -1,0 +1,32 @@
+<ul>
+	<li class="home">
+		<a href="{% url main %}" id="menu_home">
+			Home
+		</a>
+	</li>
+	<li class="concessionarias" id="menu_concessionarias">
+		<a href="{% url loja_slug slug='santa-maria' %}">
+			Concessionárias
+		</a>
+	</li> 
+	<li class="motos" id="menu_motos">
+		<a href="{% url motos %}">
+			Motos
+		</a>
+	</li>
+	<li class="oficina" id="menu_oficina">
+		<a href="{% url assistencia %}">
+			Oficina
+		</a>
+	</li>
+	<li class="produtos" id="menu_produtos">
+		<a href="{% url boutique %}">
+			Produtos
+		</a>
+	</li>
+	<li class="contato" id="menu_contato">
+		<a href="{% url contato %}">
+			Contato
+		</a>
+	</li>
+</ul>

@@ -1,0 +1,41 @@
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("img[rel]").overlay();
+		$("body div.artigos div.scrollable").scrollable().gallery({
+			disabledClass: 'inactive'
+		});
+	});
+</script>
+<div class="artigos clearfix">
+    <a class="prevPage btn">anteriores</a>
+    <div class="scrollable">
+        <div class="items">
+			{% for artigo in artigos %}
+			{% if forloop.first %}
+			<div class="first">
+			{% else %}
+			<div>
+			{% endif %}
+				{% if artigo.imagem.url_75x74 %}
+			    <img src="{{ artigo.imagem.url_75x74 }}" alt="{{ artigo.nome }}" rel="#artigo_{{ artigo.id }}" />
+				{% else %}
+				<img src="{{ MEDIA_URL }}/img/blank.gif" alt="" rel="#artigo_{{ artigo.id }}" width="75" height="74" />
+				{% endif %}
+				<ul>
+				    <li><strong>{{ artigo.nome }}</strong></li>
+					{% if artigo.parcelas > 0 %}
+					<li class="aprazo"><span>{{ artigo.parcelas }}</span>x s/ juros de R$ <span>{{ artigo.valor_parcela }}</span></li>		
+					{% endif %}
+					{% if artigo.valor > 0 %}
+					<li class="avista"> R$ <span>{{ artigo.valor }}</span> à vista.</li>
+					{% endif %}
+					{% if artigo.descricao %}
+					<li class="descricao">{{ artigo.descricao }}</li>
+					{% endif %}
+				</ul>
+			</div>
+			{% endfor %}
+        </div>
+    </div>
+    <a class="nextPage btn">próximas</a>
+</div>

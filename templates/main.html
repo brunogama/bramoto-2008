@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<div id="banner" class="clearfix">
+	<ul>
+	    <li class="first">
+	        <a href="{{ be.uri }}" class="left" rel="external">
+	            <img src="{{ MEDIA_URL }}{{ be.banner }}" alt="" width="440" height="165" />
+	        </a>
+	    </li>
+	    <li>
+	        <a href="{{ bd.uri }}" class="left" rel="external">
+	         	<img src="{{ MEDIA_URL }}{{ bd.banner }}" alt="" width="440" height="165" />
+	        </a>
+	    </li>
+	</ul>
+</div><!-- .banner -->
+<div class="left width2">				
+	<h2>Seja bem vindo</h2>					
+	<p>
+A Bramoto, uma rede com nove lojas no Estado, nas cidades de Santa Maria, Cachoeira do Sul, São Gabriel, Rosário do Sul, Santiago, São Borja, Itaqui e Caçapava do Sul, atende mais de 80 municípios na região centro e fronteira oeste do estado.	
+	</p>
+</div>
+<div class="right width2">
+	<h2>Notícias</h2>
+
+	{{ noticia.texto|linebreaks }}
+	
+</div>
+{% endblock %}

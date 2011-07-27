@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+	Contato
+	| 
+{% endblock %}
+{% block conteudo %}
+	<h2>Contato</h2>
+	<p>	
+		Utilize nossos endereços ou o formulário abaixo para enviar seus comentários, dúvidas ou sugestões. Suas informações são muito importantes para a manutenção de uma Bramoto cada vez melhor. Responderemos com grande satisfação.
+	</p>
+	{% if mostrar %}<p>{{ mostrar }}</p>{% endif %}
+	<form id="form_contato" action="" method="post" accept-charset="utf-8" class="big_form">
+		<fieldset>	
+			<ol>
+				{{ form.as_ul }}
+				<li class="padding_button">
+					<button type="submit">
+						Enviar
+					</button>
+				</li>
+			</ol>
+		</fieldset>
+	</form>
+{% endblock %}

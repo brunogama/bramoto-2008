@@ -1,0 +1,36 @@
+@charset "utf-8";
+.clear         { clear:both; height: 1px; font-size: 1%; }
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.float-left, .left, .fleft   { float:left; }
+.float-right, .right, .fright   { float:right; }
+.align-left     { text-align:left; }
+.align-right    { text-align:right!important; }
+.align-center   { text-align:center; }
+.justify  { text-align:justify; }
+.bold          { font-weight:bold; }
+.italic        { font-style:italic; }
+.underline     { border-bottom:1px solid; }
+.highlight     { background:#ffc; }
+.img-left      { float:left; margin:4px 10px 4px 0; }
+.img-right     { float:right; margin:4px 0 4px 10px; }
+.upper-case { text-transform: uppercase;}
+
+.column { display: block; float: left; }
+.first { margin-left: 0; }
+.final { margin-right: 0; border-right: none; }
+
+.block { display: block; }
+
+.hidden,
+.none { display: none; }

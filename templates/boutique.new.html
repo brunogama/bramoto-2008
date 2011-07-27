@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="Content-Language" content="pt-br">
+	<meta name="description" content="A Bramoto é a maior rede de Concessionárias Autorizadas Honda do Rio Grande do Sul, com lojas em Santa Maria, Cachoeira do Sul, São Gabriel, Rosário do Sul, Santiago, São Borja e Itaqui, atendendo mais de 80 municípios na região centro e fronteira oeste do estado."/>
+	<meta name="keywords" content="motos,moto,motocicletas,motocicleta,bramoto,bramotos,santa maria,rio grande do sul,honda,concessionárias,biz,cg,titan,shadow,job,hornet,cb,oficina,peças,concessionárias,santiago,são gabriel,cachoeira do sul,nxr,cbfx,twister,fourtraxx,125,150,250,700,600 F,são borja,seminovas,assistência técnica,agende seus serviços,boutique,consórcio nacional honda,cnh,financiamento,nx4,125 mais,125+ 125 +,bruno gama,presidente vargas,conquiste,condições especiais,agilidade,formação,grupos,acessórios"/>
+	<meta name="author" content="http://twitter.com/brunogama" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/constantes.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/master.css?{% now "u" %}" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	<script src="{{ MEDIA_URL }}js/utils.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery.tools.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery.meio.mask.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/bindings.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="{{ MEDIA_URL }}js/IE9.js" type="text/javascript">
+	IE7_PNG_SUFFIX = "_trans.png";
+	</script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/ie.css?{% now "u" %}" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>
+			Boutique |  Produtos | Bramoto 35 Anos | bramoto.com
+	</title>
+</head>
+<body>
+	<div id="wrapper" class="clearfix">
+	    <div class="clearfix" id="header">
+			<h1 id="logo"><a href="{% url bramoto.main.views.index %}" title="Bramoto 35 anos">Bramoto 35 anos</a></h1>
+	        <div class="clearfix" id="menu">
+ 				{% include "menu.html" %}
+	        </div>
+	    </div>
+	    <div class="clearfix" id="conteudo">
+			<h2>Produtos</h2>
+
+			{% include 'submenu_produtos.html' %}
+
+			<div class="white_box clearfix">
+				<h3>Boutique</h3>
+				<p>Aproveite ao máximo a sua Honda utilizando acessórios, capacetes, equipamentos de segurança, jaquetas, capas e trajes de chuva, luvas, botas, produtos oficiais da marca e uma série de itens indispensáveis no dia-a-dia do motociclista.
+				</p>
+				<p>Confira nossos produtos:</p>
+				<script type="text/javascript" charset="utf-8">
+					$(function(){
+						$("body div.artigos div.scrollable").scrollable({
+							size : 4
+						}).find("img[rel]").overlay().gallery({
+							disabledClass: 'inactive'
+						});
+					});
+				</script>
+				<div class="artigos clearfix">
+				    <a class="prevPage btn">anteriores</a>
+				    <div class="scrollable">
+				        <div class="items">
+							{% for artigo in artigos %}
+							{% if forloop.first %}
+							<div class="first">
+							{% else %}
+							<div>
+							{% endif %}
+
+							    <img src="{{ artigo.imagem.url_75x74 }}" alt="{{ artigo.nome }}" rel="#artigo{{ forloop.counter }}" />
+
+								<h3>{{ artigo.nome }}</h3>
+							</div>
+							{% endfor %}
+				        </div>
+				    </div>
+				    <a class="nextPage btn">próximas</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="clearfix trans_black" id="footer">
+			{% include "footer.html" %}
+	    </div>
+	</div>
+	{% for artigo in artigos %}
+	<div class="simple_overlay" id="artigo{{ forloop.counter }}">
+	    <img src="{{ artigo.imagem.url_499x492 }}" title="{{ artigo.nome }}" alt="{{ artigo.nome }}" />
+		<div class="detalhes">
+			<h3>{{ artigo.nome }}</h3>
+			{% if artigo.parcelas > 0 %}
+		    <p class="aprazo">
+		    	<span>{{ artigo.parcelas }}</span>x sem juros de R$ <span>{{ artigo.valor_parcela }}</span>.
+		    </p>
+			{% endif %}
+			{% if artigo.valor > 0 %}
+			<p class="avista"> R$ <span>{{ artigo.valor }}</span> à vista.</p>
+			{% endif %}
+			{% if artigo.descricao %}
+			<p class="descricao">{{ artigo.descricao }}</p>
+			{% endif %}
+		</div>	
+	</div>
+	{% endfor %}
+</body>
+</html>

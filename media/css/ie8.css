@@ -1,0 +1,5 @@
+#menu {
+	background: url(../img/topo-trans.png) center bottom no-repeat;
+}
+#menu ul li.home a { padding: 0 15px ;}
+#menu ul li.contato a { padding: 0 20px; border-right: none;}

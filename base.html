@@ -1,0 +1,63 @@
+{% spaceless %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="Content-Language" content="pt-br">
+	<meta name="description" content="A Bramoto é a maior rede de Concessionárias Autorizadas Honda do Rio Grande do Sul, com lojas em Santa Maria, Cachoeira do Sul, São Gabriel, Rosário do Sul, Santiago, São Borja e Itaqui, atendendo mais de 80 municípios na região centro e fronteira oeste do estado."/>
+	<meta name="keywords" content="motos,moto,motocicletas,motocicleta,bramoto,bramotos,santa maria,rio grande do sul,honda,concessionárias,biz,cg,titan,shadow,job,hornet,cb,oficina,peças,concessionárias,santiago,são gabriel,cachoeira do sul,nxr,cbfx,twister,fourtraxx,125,150,250,700,600 F,são borja,seminovas,assistência técnica,agende seus serviços,boutique,consórcio nacional honda,cnh,financiamento,nx4,125 mais,125+ 125 +,bruno gama,presidente vargas,conquiste,condições especiais,agilidade,formação,grupos,acessórios"/>
+	<meta name="author" content="http://twitter.com/brunogama" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/constantes.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/master.css?{% now "u" %}" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="{{ MEDIA_URL }}css/ie.css?{% now "u" %}" type="text/css" media="screen" title="no title" charset="utf-8">
+	<![endif]-->
+	<script src="{{ MEDIA_URL }}js/utils.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery.tools.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/jquery.meio.mask.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ MEDIA_URL }}js/bindings.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--[if lt IE 7]>
+	<script src="{{ MEDIA_URL }}js/IE7.js" type="text/javascript"></script>
+	<![endif]-->
+	<title>
+		{% block title %} {% endblock %}
+		Bramoto 35 Anos | bramoto.com
+	</title>
+</head>
+<body>
+	<div id="wrapper">
+	    <div class="clearfix" id="header">
+			<h1 id="logo"><a href="{% url bramoto.main.views.index %}" title="Bramoto 35 anos">Bramoto 35 anos</a></h1>
+	        <div class="clearfix" id="menu">
+ 				{% include "menu.html" %}
+	        </div>
+	    </div>
+	    <div class="clearfix" id="conteudo">
+			{% block conteudo %} {% endblock %}
+	    </div>
+	    <div class="clearfix" id="footer">
+			{% include "footer.html" %}
+	    </div>
+	</div> 
+	<div class="simple_overlay" id="gallery"> 
+	    <img class="progress" src="http://static.flowplayer.org/tools/img/overlay/loading.gif" /> 
+	</div>
+	<!--[if lt IE 7]>
+	<script type="text/javascript" charset="utf-8">
+	$(function() {
+		var zIndexNumber = 1000;
+		$('a').each(function() {
+			$(this).css('zIndex', zIndexNumber);
+			zIndexNumber -= 10;
+		});
+	});		
+	</script>
+
+	<![endif]-->
+</body>
+</html>
+{% endspaceless %}
