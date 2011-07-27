@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from django.http import HttpResponse, HttpRequest
+from django.http import HttpResponse
+from django.http import HttpRequest
+from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django import forms
-from django.core.mail import send_mail
+from django.core.mail import send_mail, BadHeaderError
 
 def main(request):
 	return render_to_response('main.html', locals(), context_instance = RequestContext(request))
@@ -59,8 +61,8 @@ class FormContato(forms.Form):
 		destino = 'bramotoolavo@terra.com.br'
 		texto = u"Nome: %(nome)s\n Cidade: %(cidade)s (Preenchido pelo Formulário)\n  Telefone: %(telefone)s\n E-mail: %(email)s\n Mensagem: %(comentario)s" % self.cleaned_data
 		# texto = texto + "IP em que contato foi enviado: %s" % (ip)
-		# send_mail(titulo,texto,'contato@bramoto.com',[destino])
-		# send_mail(titulo,texto,'contato@bramoto.com',['lamartine.souza@terra.com.br'])
+		send_mail(titulo,texto,'contato@bramoto.com',[destino])
+		send_mail(titulo,texto,'contato@bramoto.com',['lamartine.souza@terra.com.br', 'bgamap@gmail.com'])
 		
 def contato(request):
 	pars = {}
@@ -72,6 +74,7 @@ def contato(request):
 			mostrar = 'Contato enviado.'
 			pars['mostrar'] = mostrar
 			form = FormContato()
+			return HttpResponseRedirect('/contato/')
 
 	else:
 		form = FormContato()
