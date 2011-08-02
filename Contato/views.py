@@ -58,28 +58,37 @@ class FormContato(forms.Form):
 
 	def enviar(self):
 		titulo = 'bramoto.com - Mensagem enviada pelo site'
-		destino = 'bramotoolavo@terra.com.br'
+		destino = ['bramotoolavo@terra.com.br', 'lamartine.souza@terra.com.br', 'bgamap@gmail.com', 'bramotoricardo@terra.com.br']
 		texto = u"Nome: %(nome)s\n Cidade: %(cidade)s (Preenchido pelo Formulário)\n  Telefone: %(telefone)s\n E-mail: %(email)s\n Mensagem: %(comentario)s" % self.cleaned_data
-		# texto = texto + "IP em que contato foi enviado: %s" % (ip)
-		send_mail(titulo,texto,'contato@bramoto.com',[destino])
-		send_mail(titulo,texto,'contato@bramoto.com',['lamartine.souza@terra.com.br', 'bgamap@gmail.com'])
+		try:
+			for to in destino:
+				send_mail(titulo,texto,'contato@bramoto.com', list(to), fail_silently=False)
+			pass
+		except BadHeaderError:
+			return HttpResponse('Invalid header found.')
 		
 def contato(request):
+	print "current ======> %s" % request.get_host()
 	pars = {}
 	if request.method == 'POST':
 		form = FormContato(request.POST)
 
 		if form.is_valid():
 			form.enviar()
-			mostrar = 'Contato enviado.'
-			pars['mostrar'] = mostrar
-			form = FormContato()
-			return HttpResponseRedirect('/contato/')
-
+			return HttpResponseRedirect('/contato/enviado/')
 	else:
 		form = FormContato()
 	
 	pars['form'] = form
 	return render_to_response('contato.html',
+							 pars,
+							 context_instance = RequestContext(request))
+							
+							
+def contato_enviado(request):
+	pars = {}
+	pars['mostrar'] = 'Sua mensagem foi enviada com sucesso.'
+	
+	return render_to_response('contato_enviado.html',
 							 pars,
 							 context_instance = RequestContext(request))
