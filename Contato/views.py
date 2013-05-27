@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from django.http import HttpResponse
-from django.http import HttpRequest
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django import forms
-from django.core.mail import send_mail, BadHeaderError
+from django.core.mail import send_mail, send_mass_mail, BadHeaderError
+from django.core.urlresolvers import reverse
+
+
 
 def main(request):
 	return render_to_response('main.html', locals(), context_instance = RequestContext(request))
@@ -59,23 +60,36 @@ class FormContato(forms.Form):
 	def enviar(self):
 		titulo = 'bramoto.com - Mensagem enviada pelo site'
 		destino = ['bramotoolavo@terra.com.br', 'lamartine.souza@terra.com.br', 'bgamap@gmail.com', 'bramotoricardo@terra.com.br']
-		texto = u"Nome: %(nome)s\n Cidade: %(cidade)s (Preenchido pelo Formulário)\n  Telefone: %(telefone)s\n E-mail: %(email)s\n Mensagem: %(comentario)s" % self.cleaned_data
-		try:
-			for to in destino:
-				send_mail(titulo,texto,'contato@bramoto.com', list(to), fail_silently=False)
-			pass
-		except BadHeaderError:
-			return HttpResponse('Invalid header found.')
+		texto = u'''Nome: %(nome)s
+					Cidade: %(cidade)s
+					Telefone: %(telefone)s
+					Email: %(email)s
+					Mensagem: %(comentario)s
+					''' % self.cleaned_data
+		texto = texto.replace('\t','')
+		mails = []
+		for to in destino:
+			send_mail(titulo,texto,'contato@bramoto.com', [to], fail_silently=False)
+			mail = (titulo, texto, 'contato@bramoto.com', to)
+			mails.append(mail)
+		mails = tuple(mails)
+		# print mails
+		# send_mass_mail(mails, fail_silently=True)
 		
 def contato(request):
-	print "current ======> %s" % request.get_host()
 	pars = {}
 	if request.method == 'POST':
 		form = FormContato(request.POST)
 
 		if form.is_valid():
-			form.enviar()
-			return HttpResponseRedirect('/contato/enviado/')
+			try:
+				# send_mail(subject, message, from_email, ['change@this.com'])
+				form.enviar()
+			except BadHeaderError:
+				return HttpResponse('Invalid header found.')
+
+			# return HttpResponseRedirect('/contact/thankyou/')
+			return HttpResponseRedirect(reverse('bramoto.Contato.views.contato_enviado'))
 	else:
 		form = FormContato()
 	
